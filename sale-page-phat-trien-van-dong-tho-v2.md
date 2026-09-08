@@ -36,7 +36,7 @@ Sở hữu cẩm nang 18 trang với 10 hoạt động thực chiến dành cho 
 
 *Vi-copy dưới nút (nếu cần reassurance):*
 
-Không ràng buộc — bạn nhận file PDF trong 30 giây sau khi tham gia nhóm. Các mẹ trong nhóm cũng sẽ cùng chia sẻ kinh nghiệm.
+Không ràng buộc — bạn nhận file PDF ngay trong nhóm. Các mẹ trong nhóm cũng sẽ cùng chia sẻ kinh nghiệm.
 
 *Gợi ý thiết kế:* Hero đơn giản: hình bé đang vui chơi (không quá "lâm sàng"), nút CTA màu cam/sáng contrasted với nền nhẹ. Không dùng nhiều icon lúc này. Link nhóm Zalo nên nổi bật — có thể dùng icon Zalo + nút bấm.
 
@@ -48,9 +48,13 @@ Không ràng buộc — bạn nhận file PDF trong 30 giây sau khi tham gia nh
 
 **Hook:**
 
-9 giờ chiều thứ 5. Con bạn lại nằm Netflix. Dù mẹ đã mua cầu trượt, mua xe đạp, mua đủ loại — con vẫn không chịu. Mẹ bắt đầu tự hỏi: "Có phải con tôi có vấn đề gì không?"
+Một bé gái 4 tuổi. Mẹ thử gấptime con leo cầu thang, chơi song leo trèo — con đứng hình, không động. Mẹ thử mời con nhảy, con sợ, khúm người. Mẹ thử ném bóng cho con bắt — con lúng túng, không biết đưa tay, chỉ đứng nhìn xung quanh. Mẹ thử nhiều thứ: xe đạp, hộp rơi, kéo chạy — con vẫn không chịu, hoặc ngại đưa chân.
 
-Vấn đề không ở con. Vấn đề ở chỗ — hầu hết các hoạt động vận động chúng ta biết, đều được thiết kế cho trẻ phát triển bình thường, không phải cho trẻ có sự khác biệt về vận động.
+Mẹ không hiểu: "Sao con tôi không như các bé khác? Bao giờ con mới biết vận động như thế?"
+
+Câu trả lời không đơn giản là "con còn nhỏ" hay "con chưa sẵn sàng". Vấn đề nằm ở chỗ — vận động của con trẻ tự kỷ không phải là vấn đề "không chịu" hay "lười", mà là sự khác biệt trong cách não bộ xử lý thông tin vận động.
+
+Và hầu hết tài liệu vận động chúng ta biết — đều được thiết kế cho trẻ phát triển bình thường, không phải cho trẻ có sự khác biệt này.
 
 Trẻ tự kỷ đôi khi cần:
 - Thêm thời gian để xử lý thông tin vận động
@@ -298,7 +302,7 @@ https://zalo.me/g/urf9rsgbp4qki5gvxbya
 
 **Bước 1:** Nhấn chuột / chạm vào link nhóm Zalo duy nhất bên dưới.
 
-**Bước 2:** Nhập điện thoại, xác nhận tham gia nhóm.
+**Bước 2:** Nhấn "Tham gia" — link đã mở trực tiếp group, không cần thêm bước nào.
 
 **Bước 3:** Nhận file PDF 18 trang trực tiếp trong nhóm — đọc, in, làm theo.
 
