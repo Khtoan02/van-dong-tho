@@ -1634,3 +1634,240 @@ section {
   color: var(--color-ink-soft);
   line-height: 1.6;
 }
+
+/* ==========================================================================
+   ENHANCED REAL DOCUMENT VISUALS & MEDIA INTEGRATIONS
+   ========================================================================== */
+
+/* Empathy 2-Column Grid with Page 3 Infographic */
+.empathy-split-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: clamp(2rem, 4vw, 3.5rem);
+  align-items: center;
+}
+
+.infographic-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: 1rem;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  transition: transform 0.4s var(--ease-spring);
+}
+
+.infographic-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.infographic-img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+  display: block;
+}
+
+/* 10 Activity Cards with Real Page Illustration */
+.act-card-media {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  margin-bottom: 1.25rem;
+  border: 1px solid var(--color-border-subtle);
+  background: var(--color-surface-soft);
+  position: relative;
+  cursor: pointer;
+}
+
+.act-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.4s var(--ease-spring);
+  display: block;
+}
+
+.act-card-media:hover img {
+  transform: scale(1.08);
+}
+
+.act-zoom-hint {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: rgba(28, 83, 74, 0.85);
+  backdrop-filter: blur(4px);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-pill);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: all 0.25s ease;
+  pointer-events: none;
+}
+
+.act-card-media:hover .act-zoom-hint {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Principles & Foundations Showcase (Pages 4 & 5) */
+.foundations-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+.foundation-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.35s var(--ease-spring);
+}
+
+.foundation-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.foundation-frame {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-border-subtle);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 1.25rem;
+}
+
+.foundation-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Tracker Sheet Feature Showcase (Page 17) */
+.tracker-showcase-box {
+  background: linear-gradient(135deg, #FFFDF9 0%, #F5EFE6 100%);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: clamp(2rem, 5vw, 3.5rem);
+  margin-top: 3.5rem;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 3rem;
+  align-items: center;
+  box-shadow: var(--shadow-md);
+}
+
+.tracker-preview-frame {
+  background: #fff;
+  padding: 0.75rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-lg);
+  max-width: 380px;
+  margin-inline: auto;
+  transition: transform 0.4s var(--ease-spring);
+}
+
+.tracker-preview-frame:hover {
+  transform: translateY(-4px) rotate(1deg);
+}
+
+.tracker-preview-frame img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
+  display: block;
+}
+
+/* Lightbox Modal for Zooming In Any Page */
+.lightbox-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(18, 25, 23, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 10000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.lightbox-modal.active {
+  display: flex;
+  opacity: 1;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lightbox-img {
+  max-width: 100%;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.lightbox-caption {
+  color: #FAF7F2;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-top: 0.75rem;
+  text-align: center;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: -45px;
+  right: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.25rem;
+  transition: background 0.2s ease;
+}
+
+.lightbox-close:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 992px) {
+  .empathy-split-grid,
+  .foundations-grid,
+  .tracker-showcase-box {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
