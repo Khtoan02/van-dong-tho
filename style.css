@@ -1871,3 +1871,241 @@ section {
     gap: 2rem;
   }
 }
+
+/* ==========================================================================
+   HERO LEAD MAGNET (OPT-IN EBOOK): 2 CỘT, NỀN TỐI CỔ ĐIỂN, SANG TRỌNG
+   ========================================================================== */
+.hero-lead-magnet {
+  background-color: var(--color-bg);
+  padding: clamp(1.5rem, 3vw, 2.75rem) 0 clamp(2.5rem, 5vw, 4rem) 0;
+  position: relative;
+}
+
+.hero-dark-card {
+  background: radial-gradient(circle at 82% 25%, rgba(217, 104, 70, 0.18) 0%, transparent 55%),
+              radial-gradient(circle at 18% 75%, rgba(42, 115, 103, 0.28) 0%, transparent 60%),
+              #0D231F;
+  border: 1px solid rgba(230, 214, 192, 0.22);
+  border-radius: clamp(20px, 3.5vw, 36px);
+  padding: clamp(2.5rem, 6vw, 4.75rem);
+  box-shadow: 0 30px 70px -15px rgba(10, 26, 23, 0.5),
+              inset 0 1px 1px rgba(255, 255, 255, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-dark-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.35) 50%, transparent 100%);
+  pointer-events: none;
+}
+
+.hero-dark-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2.5rem, 5vw, 4.5rem);
+  align-items: center;
+}
+
+.hero-dark-copy {
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.hero-dark-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #F4C47F; /* Warm champagne gold */
+  margin-bottom: 1.25rem;
+}
+
+.hero-dark-eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #F4C47F;
+  box-shadow: 0 0 10px #F4C47F;
+}
+
+.hero-dark-title {
+  font-size: clamp(2.2rem, 3.8vw, 3rem); /* ~48px */
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+  margin-bottom: 1.5rem;
+  text-wrap: balance;
+}
+
+.hero-dark-title .accent-gold {
+  color: #F8D59A;
+  background: linear-gradient(135deg, #FFFFFF 0%, #F5C989 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-dark-desc {
+  font-size: clamp(1.05rem, 1.6vw, 1.15rem);
+  color: #D4E3DF;
+  line-height: 1.75;
+  margin-bottom: 2.25rem;
+  max-width: 54ch;
+}
+
+.hero-dark-cta-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  align-items: flex-start;
+}
+
+/* Nút CTA nền sáng chữ tối */
+.btn-cta-light {
+  background: #FAF7F2;
+  color: #0E231F !important;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 1.15rem 2.25rem;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35), 0 0 20px rgba(250, 247, 242, 0.2);
+  transition: all 0.3s var(--ease-spring);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btn-cta-light:hover {
+  background: #FFFFFF;
+  color: #081613 !important;
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.45), 0 0 28px rgba(255, 255, 255, 0.3);
+}
+
+.btn-cta-light .cta-arrow-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #0E231F;
+  color: #FAF7F2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.25s ease;
+}
+
+.btn-cta-light:hover .cta-arrow-circle {
+  transform: translateX(4px);
+}
+
+.hero-dark-subnote {
+  font-size: 0.86rem;
+  color: #9DB4AE;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.hero-dark-subnote svg {
+  color: #64C5B1;
+  flex-shrink: 0;
+}
+
+/* Cột phải: Mockup Ebook / Sách 3D Cổ Điển Sang Trọng */
+.hero-dark-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.book-mockup-stage {
+  position: relative;
+}
+
+.book-3d-luxury {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: -15px 25px 50px -10px rgba(0, 0, 0, 0.7),
+              0 0 40px rgba(217, 104, 70, 0.22),
+              inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+  border-left: 6px solid #081714; /* Hardcover spine simulation */
+  transition: transform 0.5s var(--ease-spring), box-shadow 0.5s var(--ease-spring);
+  background: #0E231F;
+}
+
+.book-3d-luxury:hover {
+  transform: translateY(-8px) rotate(1deg) scale(1.02);
+  box-shadow: -20px 32px 60px -10px rgba(0, 0, 0, 0.8),
+              0 0 55px rgba(217, 104, 70, 0.32);
+}
+
+.book-3d-luxury img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.luxury-badge-pill {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  background: rgba(14, 35, 31, 0.94);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(244, 196, 127, 0.45);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  padding: 0.6rem 1.1rem;
+  border-radius: var(--radius-pill);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: #F8D59A;
+  animation: floatSubtle 4s ease-in-out infinite alternate;
+}
+
+/* RESPONSIVE: Mobile ảnh dưới */
+@media (max-width: 992px) {
+  .hero-dark-grid {
+    grid-template-columns: 1fr;
+    gap: 2.75rem;
+  }
+  
+  .hero-dark-copy {
+    order: 1; /* Trái text ở trên */
+  }
+  
+  .hero-dark-media {
+    order: 2; /* Phải ảnh ở dưới */
+  }
+
+  .hero-dark-card {
+    padding: clamp(2rem, 5vw, 3rem);
+  }
+
+  .btn-cta-light {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-dark-cta-group {
+    width: 100%;
+  }
+}
