@@ -1,32 +1,29 @@
 # Visual Quality Bar & Observable Mechanisms (bar.md)
 
-**Reference Bar**: Interactive Storytelling & Luxury 3D Book Showcase (Chuẩn Apple Education / Stripe Press)  
-**Deliverable**: High-Converting Lead Magnet Landing Page for "Cẩm Nang Phát Triển Vận Động Thô Cho Trẻ Tự Kỷ"
+**Reference Bar**: Warm Sunlight, Empathetic Montessori & Occupational Therapy Aesthetic  
+*Dựa trên Visual Concept chuẩn: "Cùng con từng bước nhé!" (Thấu hiểu · Kiên nhẫn · Đồng hành · Yêu thương — Ngọc Tuyết)*
 
 ---
 
-## 6 Checkable Visual Mechanisms:
+## 7 Checkable Visual Mechanisms:
 
-1. **Hero Section 3D Luxury Elevation**:
-   - Hero sử dụng nền tối sang trọng (`#0B132B` / `#1C2541`) với gradient glow huyền ảo, tiêu đề phân cấp mạnh với điểm nhấn vàng hoàng gia (`#F8D59A` / `#F6D365`).
-   - Mockup sách/cẩm nang 3D góc nghiêng nổi bật có chiều sâu (perspective, box-shadow đa tầng), có pill badge "Bản PDF Đầy Đủ 18 Trang" đính kèm.
+1. **Sunlit Warm Natural Color Palette**:
+   - Nền canvas ánh sáng tự nhiên dịu nhẹ (`#FDFBF7` / `#FAF6EE`), phối cùng màu xanh Slate Blue trầm tĩnh (`#1B4965`), màu cam san hô / Terracotta rực rỡ cho CTA (`#E06343`), vàng mật ong dịu ngọt (`#F4B246`) và xanh Sage thư thái (`#5A9E78`).
 
-2. **Interactive 18-Page Preview Gallery & Lightbox**:
-   - Khu vực xem trước 18 trang hiển thị ảnh sắc nét, có bộ lọc phân đoạn (Phần 1: Kiến thức nền, Phần 2: 10 Hoạt động, Phần 3: Nhật ký).
-   - Tích hợp Modal Lightbox phóng to ảnh trang xem trước kèm nút Chuyển trang trước/sau, Đóng bằng phím Esc và click ngoài.
+2. **Empathetic Emotional Anchor Banner**:
+   - Tích hợp banner visual nghệ thuật *"Cùng con từng bước nhé!"* làm điểm tựa cảm xúc mở đầu cho trang, thể hiện trọn vẹn 4 giá trị cốt lõi: *Thấu hiểu · Kiên nhẫn · Đồng hành · Yêu thương*.
 
-3. **Bento Grid Architecture for 10 Activities & 6 USP**:
-   - Khối 10 trò chơi vận động và 6 điểm độc nhất (USP) được tổ chức dạng Bento Grid phân cấp thị giác rõ rệt.
-   - Mỗi card có icon sắc nét, tag kỹ năng (Thăng bằng, Phối hợp tay-mắt, Nhận thức cơ thể), tag thời lượng (~5-10 phút) và độ khó điều chỉnh.
+3. **Tactile 3D Book & Sensory Educational Motifs**:
+   - Mockup sách 3D nổi khối chân thực trên nền ánh sáng ấm, tích hợp tương tác di chuột (mouse-tilt), hiệu ứng lật mở 18 trang và huy hiệu vàng ánh kim.
 
-4. **Editorial Empathy & Academic Authority Dual Panels**:
-   - Section "Thấu hiểu nỗi đau" sử dụng tone nền kem ấm (`#FAF7F2`) với quote typography đầy cảm xúc, phân tách rõ 2 cột "Con sẽ..." và "Phụ huynh sẽ...".
-   - Section "Nguồn gốc chuyên môn" đối xứng vinh danh tác giả nguyên tác Hoa Kỳ (*Heather Ajzenman, OTR/L*) và dịch giả/chuyên gia biên soạn (*Khánh Toàn*).
+4. **Editorial Typography & Expressive Accents**:
+   - Hệ thống font chữ `Be Vietnam Pro` sắc nét, kết hợp điểm xuyết các đường cong thư pháp mềm mại, tiêu đề phân cấp rõ ràng, dễ đọc, mang lại cảm giác bình an cho phụ huynh.
 
-5. **High-Conversion Sticky Floating CTA & Zalo Group QR**:
-   - Nút CTA chính màu cam rực rỡ (`#FF6B35` -> `#FF521B`) nổi bật nhất trên toàn trang, xuất hiện cố định khi cuộn trang (Sticky Bar trên Mobile & Floating Pill trên Desktop).
-   - Section Zalo Community tích hợp trực tiếp ảnh mã QR Zalo kèm link bấm 1 chạm, hướng dẫn 3 bước tham gia nhận file PDF trực tiếp.
+5. **Harmonious Bento Architecture (10 Activities & 6 USP)**:
+   - 10 thẻ trò chơi và 6 điểm giá trị cốt lõi được sắp xếp theo dạng Bento Grid hiện đại, có icon pastel ấm áp, tag kỹ năng vận động và thời lượng thực hành (5–10 phút).
 
-6. **Flawless Responsive Geometry & Zero Overflow**:
-   - Sử dụng `clamp()` linh hoạt cho tiêu đề, tỷ lệ co giãn mượt mà trên mọi kích thước (375px, 390px, 768px, 1280px, 1440px).
-   - Tuyệt đối không tràn ngang (`scrollWidth <= clientWidth`), hiển thị tiếng Việt chuẩn UTF-8 100%, không bị lỗi font hay vỡ chữ.
+6. **Expert Spotlight & High-Conversion Zalo Hub**:
+   - Thẻ chuyên gia Hoa Kỳ *Heather Ajzenman, MS, OTR/L* dạng 2 cột Spotlight cân xứng, kết hợp cùng khối Zalo 3 bước nhận tài liệu có mã QR và nút bấm nổi bật.
+
+7. **Flawless Responsive Geometry & Zero Overflow**:
+   - Đảm bảo `scrollWidth <= clientWidth` tuyệt đối trên Mobile (375px/390px), Tablet (768px) và Desktop (1280px+), tốc độ tải trang tối ưu với 100% WebP.

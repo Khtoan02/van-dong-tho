@@ -9,38 +9,47 @@
 :root {
   /* Typography */
   --font-sans: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-script: 'Caveat', cursive, var(--font-sans);
   
-  /* Sensory-Friendly & Luxury Warm Color Palette */
-  --color-bg: #FBF9F5;              /* Ultra-warm Oatmeal / Linen */
-  --color-bg-alt: #F4EFE6;          /* Soft Sand */
-  --color-surface: #FFFFFF;         /* Pure Card Surface */
-  --color-surface-soft: #F8F5EE;    /* Soft Surface Tint */
-  --color-surface-muted: #EFE9DE;   /* Subdued Container */
+  /* Sensory-Friendly & Sunlit Warm Natural Palette */
+  --color-bg: #FAF7F0;              /* Sunlit Warm Linen / Oatmeal */
+  --color-bg-alt: #F4EDE2;          /* Soft Sand */
+  --color-surface: #FFFFFF;         /* Pure White Surface */
+  --color-surface-soft: #F5EFE6;    /* Soft Surface Tint */
+  --color-surface-muted: #EBE3D5;   /* Subdued Container */
   
-  /* Deep Dark Hero Palette (Luxury 3D Showcase) */
-  --hero-bg-deep: #08121E;
-  --hero-bg-card: #0E1E2E;
-  --hero-border: rgba(248, 213, 154, 0.2);
-  --hero-text-glow: #F6D365;
-  --hero-subtext: #C3D2E2;
+  /* Midnight Ocean Slate Hero Palette (Calm, Deep, Trustworthy) */
+  --hero-bg-deep: #0B1E2E;
+  --hero-bg-card: #132D42;
+  --hero-border: rgba(244, 178, 70, 0.3);
+  --hero-text-glow: #F4B246;
+  --hero-subtext: #CDE0EE;
   
-  /* Brand Teal / Forest - Calming, Grounding & Trust */
-  --color-primary: #154D43;         /* Deep Forest Teal */
-  --color-primary-hover: #0E362F;
-  --color-primary-light: #206E61;
-  --color-primary-soft: #EBF4F2;    /* Pale Sage Wash */
+  /* Deep Calm Slate Blue (Primary Brand - Matching "Đồng hành" Book Spine) */
+  --color-primary: #1B4965;         /* Deep Trust Slate Blue */
+  --color-primary-hover: #13384F;
+  --color-primary-light: #2C6E91;
+  --color-primary-soft: #EBF3F8;    /* Pale Blue Wash */
   --color-primary-ink: #FFFFFF;
   
-  /* Warm Terracotta / Coral Accent - Empathy & High Conversion CTA */
-  --color-accent: #E05D38;          /* Vibrant Terracotta */
+  /* Warm Terracotta / Coral Accent (Matching "Yêu thương" Book Spine) - High Conversion */
+  --color-accent: #E05D38;          /* Vibrant Warm Coral */
   --color-accent-hover: #C84926;
   --color-accent-soft: #FDF2EE;     /* Pale Peach Wash */
   --color-accent-border: #FADAD0;
   
-  /* Golden Champagne Accents (Luxury Badges) */
+  /* Sunny Mustard / Honey Gold (Matching "Thấu hiểu" Book Spine) */
   --color-gold: #D4AF37;
-  --color-gold-light: #F8D59A;
-  --color-gold-soft: rgba(248, 213, 154, 0.15);
+  --color-gold-light: #F4B246;
+  --color-gold-soft: rgba(244, 178, 70, 0.18);
+  
+  /* Pastel Sky Blue (Matching "Kiên nhẫn" Book Spine) */
+  --color-soft-blue: #8BA9C4;
+  --color-soft-blue-bg: #EBF8FF;
+  
+  /* Sage Green - Natural Growth & Sensory Balance */
+  --color-sage: #5A9E78;
+  --color-sage-soft: #EBF5F0;
   
   /* Zalo Brand Colors */
   --color-zalo: #0068FF;
@@ -48,10 +57,10 @@
   --color-zalo-soft: #EBF3FF;
   
   /* Text & Ink */
-  --color-ink: #1E2522;             /* Deep Slate */
-  --color-ink-soft: #485450;        /* Soft Charcoal */
-  --color-ink-faint: #788781;       /* Muted Pebble */
-  --color-ink-light: #A4B2AC;
+  --color-ink: #182A3A;             /* Deep Soft Slate */
+  --color-ink-soft: #485E70;        /* Soft Charcoal Slate */
+  --color-ink-faint: #788E9F;       /* Muted Pebble Slate */
+  --color-ink-light: #A4B7C6;
   
   /* Borders & Highlights */
   --color-border: #E8E2D7;
@@ -555,17 +564,45 @@ section {
   border-radius: 12px;
 }
 
-.book-feature-pill {
-  margin-top: 1.25rem;
-  background: rgba(14, 30, 48, 0.85);
-  border: 1px solid rgba(248, 213, 154, 0.3);
-  color: #F8D59A;
-  font-size: 0.82rem;
+.book-values-strip {
+  margin-top: 1.15rem;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.b-val {
+  font-size: 0.76rem;
   font-weight: 700;
-  padding: 0.35rem 0.95rem;
+  padding: 0.28rem 0.65rem;
   border-radius: var(--radius-pill);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(6px);
+  letter-spacing: 0.02em;
+}
+
+.val-understand {
+  background: #FEF9E7;
+  color: #975A16;
+  border: 1px solid #F6E05E;
+}
+
+.val-patience {
+  background: #EBF8FF;
+  color: #2B6CB0;
+  border: 1px solid #BEE3F8;
+}
+
+.val-companion {
+  background: #EBF3F8;
+  color: #1B4965;
+  border: 1px solid #90CDF4;
+}
+
+.val-love {
+  background: #FFF5F5;
+  color: #C53030;
+  border: 1px solid #FEB2B2;
 }
 
 .book-hover-hint {
@@ -577,63 +614,73 @@ section {
   gap: 0.4rem;
 }
 
-/* CỘT PHẢI (~55%): [RIBBON][TIÊU ĐỀ][MÔ TẢ][CTA] */
+/* CỘT PHẢI (~55%): [TIÊU ĐỀ][MÔ TẢ][CTA] */
 .hero-dark-copy {
   display: flex;
   flex-direction: column;
 }
 
-/* [RIBBON] */
-.hero-ribbon-badge {
+.hero-values-pill {
   display: inline-flex;
   align-items: center;
   gap: 0.55rem;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: #FFA273;
-  background: linear-gradient(135deg, rgba(255, 107, 53, 0.22) 0%, rgba(248, 213, 154, 0.12) 100%);
-  border: 1px solid rgba(255, 107, 53, 0.5);
-  padding: 0.45rem 1.15rem;
+  letter-spacing: 0.08em;
+  color: #F4B246;
+  background: rgba(244, 178, 70, 0.12);
+  border: 1px solid rgba(244, 178, 70, 0.35);
+  padding: 0.4rem 1.05rem;
   border-radius: var(--radius-pill);
   width: fit-content;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 4px 16px rgba(255, 107, 53, 0.2);
+  margin-bottom: 1.25rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
 }
 
-.hero-ribbon-badge .ribbon-icon {
-  font-size: 1.05rem;
+.hero-puzzle-icon {
+  font-size: 0.95rem;
 }
 
 /* ③ TYPOGRAPHY: H1 RẤT LỚN ~64px WEIGHT 900 IN HOA PHÂN DÒNG CÂN ĐỐI */
 .hero-dark-title {
-  font-size: clamp(2.4rem, 5.2vw, 4.1rem); /* ~64px trên desktop */
+  font-size: clamp(2.3rem, 5vw, 3.8rem); /* ~60px trên desktop */
   font-weight: 900;
   text-transform: uppercase;
-  line-height: 1.14;
+  line-height: 1.15;
   color: #FFFFFF;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   letter-spacing: -0.025em;
   text-wrap: balance;
 }
 
 /* ② CỤM NHẤN H1 DÙNG MÀU NHẤN NỔI */
 .hero-accent-word {
-  color: #FF6B35;
-  background: linear-gradient(135deg, #FFA273 0%, #FF6B35 50%, #FF4500 100%);
+  color: #F4B246;
+  background: linear-gradient(135deg, #FFE8B8 0%, #F4B246 50%, #E68A00 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
-  filter: drop-shadow(0 4px 18px rgba(255, 107, 53, 0.4));
+  filter: drop-shadow(0 4px 16px rgba(244, 178, 70, 0.4));
+}
+
+.hero-script-tag {
+  font-family: var(--font-script);
+  font-size: clamp(1.25rem, 2.2vw, 1.6rem);
+  font-weight: 700;
+  color: #FDE68A;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 /* [MÔ TẢ] 2-3 CÂU SÚC TÍCH */
 .hero-dark-desc {
-  font-size: clamp(1.05rem, 1.8vw, 1.18rem);
-  line-height: 1.74;
+  font-size: clamp(1.02rem, 1.7vw, 1.15rem);
+  line-height: 1.72;
   color: #CBD8E6;
-  margin-bottom: 2.25rem;
+  margin-bottom: 2rem;
   max-width: 620px;
   text-wrap: pretty;
 }
@@ -646,19 +693,19 @@ section {
 }
 
 .btn-hero-cta {
-  background: linear-gradient(135deg, #FF6B35 0%, #E64A19 100%);
+  background: linear-gradient(135deg, #E05D38 0%, #C84926 100%);
   color: #FFFFFF;
-  padding: 1.2rem 2.45rem;
-  font-size: 1.18rem;
+  padding: 1.15rem 2.35rem;
+  font-size: 1.15rem;
   font-weight: 800;
   border-radius: var(--radius-pill);
-  box-shadow: 0 16px 36px -4px rgba(255, 107, 53, 0.55), inset 0 1px 1px rgba(255, 255, 255, 0.35);
+  box-shadow: 0 16px 36px -4px rgba(224, 93, 56, 0.55), inset 0 1px 1px rgba(255, 255, 255, 0.35);
   width: fit-content;
 }
 
 .btn-hero-cta:hover {
-  background: linear-gradient(135deg, #FF7D4D 0%, #F05524 100%);
-  box-shadow: 0 20px 45px -4px rgba(255, 107, 53, 0.68), inset 0 1px 1px rgba(255, 255, 255, 0.45);
+  background: linear-gradient(135deg, #EC6B46 0%, #D4522E 100%);
+  box-shadow: 0 20px 45px -4px rgba(224, 93, 56, 0.68), inset 0 1px 1px rgba(255, 255, 255, 0.45);
   color: #FFFFFF;
 }
 
@@ -683,11 +730,103 @@ section {
   left: 0;
   width: 100%;
   height: 24px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 24' preserveAspectRatio='none'%3E%3Cpolygon points='0,24 20,0 40,24' fill='%23FBF9F5'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 24' preserveAspectRatio='none'%3E%3Cpolygon points='0,24 20,0 40,24' fill='%23FAF7F0'/%3E%3C/svg%3E");
   background-repeat: repeat-x;
   background-size: 40px 24px;
   z-index: 20;
   pointer-events: none;
+}
+
+/* ==========================================================================
+   VISUAL ANCHOR BANNER: CÙNG CON TỪNG BƯỚC NHÉ
+   ========================================================================== */
+.visual-anchor-section {
+  padding-top: clamp(2.5rem, 5vw, 4rem);
+  padding-bottom: clamp(1.5rem, 3vw, 2.5rem);
+  background-color: var(--color-bg);
+}
+
+.visual-banner-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 14px 34px -8px rgba(27, 73, 101, 0.12), 0 4px 12px rgba(0, 0, 0, 0.03);
+  border: 1px solid var(--color-border);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.visual-banner-card:hover {
+  box-shadow: 0 20px 45px -10px rgba(27, 73, 101, 0.18);
+  transform: translateY(-2px);
+}
+
+.visual-banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.visual-banner-footer {
+  padding: 1.25rem 2rem;
+  background: var(--color-surface);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--color-border-subtle);
+}
+
+.banner-values-pills {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.value-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.95rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.chip-yellow {
+  background: #FEF9E7;
+  color: #975A16;
+  border: 1px solid #F6E05E;
+}
+
+.chip-blue {
+  background: #EBF8FF;
+  color: #2B6CB0;
+  border: 1px solid #BEE3F8;
+}
+
+.chip-navy {
+  background: #EBF3F8;
+  color: #1B4965;
+  border: 1px solid #C9DCFA;
+}
+
+.chip-coral {
+  background: #FFF5F5;
+  color: #C53030;
+  border: 1px solid #FEB2B2;
+}
+
+.banner-quote-text {
+  font-family: var(--font-script);
+  font-size: 1.35rem;
+  color: var(--color-primary);
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.35;
+  max-width: 520px;
 }
 
 /* ==========================================================================
