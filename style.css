@@ -701,7 +701,7 @@ section {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
   gap: clamp(2rem, 4vw, 3.5rem);
-  align-items: stretch;
+  align-items: start;
 }
 
 .letter-card {
@@ -793,16 +793,18 @@ section {
   line-height: 1.5;
 }
 
+.infographic-wrapper {
+  position: sticky;
+  top: 2rem;
+}
+
 .infographic-card {
   background-color: var(--color-surface);
   border-radius: var(--radius-lg);
-  padding: 1.25rem;
+  padding: 0.65rem;
   box-shadow: var(--shadow-md);
   border: 1px solid var(--color-border-subtle);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: block;
   cursor: pointer;
   position: relative;
   transition: transform 0.3s var(--ease-spring), box-shadow 0.3s ease;
@@ -817,20 +819,24 @@ section {
   border-radius: var(--radius-md);
   width: 100%;
   height: auto;
-  box-shadow: var(--shadow-sm);
+  display: block;
 }
 
 .infographic-zoom-tag {
   position: absolute;
-  bottom: 1.75rem;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
   background: rgba(14, 30, 46, 0.9);
   color: #fff;
   font-size: 0.82rem;
   font-weight: 600;
-  padding: 0.4rem 0.9rem;
+  padding: 0.45rem 1rem;
   border-radius: var(--radius-pill);
   backdrop-filter: blur(6px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+  pointer-events: none;
 }
 
 /* ==========================================================================
@@ -1398,23 +1404,24 @@ section {
   background-color: var(--color-bg);
 }
 
-.expert-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2.5rem;
-}
-
-.expert-single-wrap {
-  max-width: 780px;
+.expert-spotlight-wrap {
+  max-width: 1040px;
   margin-inline: auto;
 }
 
-.expert-card {
+.expert-spotlight-card {
   background: var(--color-surface);
   border-radius: var(--radius-lg);
-  padding: 2.5rem;
+  padding: clamp(2rem, 3.5vw, 3rem);
   border: 1px solid var(--color-border-subtle);
   box-shadow: var(--shadow-md);
+  display: grid;
+  grid-template-columns: 1.18fr 0.82fr;
+  gap: clamp(2rem, 3.5vw, 3rem);
+  align-items: center;
+}
+
+.expert-spotlight-info {
   display: flex;
   flex-direction: column;
 }
@@ -1429,16 +1436,44 @@ section {
 }
 
 .expert-name {
-  font-size: 1.4rem;
+  font-size: clamp(1.4rem, 2.2vw, 1.75rem);
   margin-bottom: 0.85rem;
   color: var(--color-ink);
+  font-weight: 800;
 }
 
 .expert-desc {
   font-size: 0.98rem;
   color: var(--color-ink-soft);
   line-height: 1.65;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.expert-highlights {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.expert-highlights li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.92rem;
+  color: var(--color-ink);
+  line-height: 1.5;
+}
+
+.expert-highlights .bullet-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  margin-top: 0.45rem;
+  flex-shrink: 0;
 }
 
 .expert-quote-box {
@@ -1450,7 +1485,51 @@ section {
   font-size: 0.94rem;
   color: var(--color-ink-soft);
   line-height: 1.6;
-  margin-top: auto;
+}
+
+.expert-spotlight-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foundation-frame {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s var(--ease-spring), box-shadow 0.3s ease;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-subtle);
+  max-width: 360px;
+  width: 100%;
+}
+
+.foundation-frame:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: var(--shadow-lg);
+}
+
+.foundation-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.foundation-zoom-tag {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background: rgba(14, 30, 46, 0.88);
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.35rem 0.8rem;
+  border-radius: var(--radius-pill);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  pointer-events: none;
 }
 
 /* ==========================================================================
@@ -2001,6 +2080,16 @@ section {
   }
   .empathy-split-grid {
     grid-template-columns: 1fr;
+  }
+  .infographic-wrapper {
+    position: static;
+  }
+  .expert-spotlight-card {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+  .expert-spotlight-media {
+    order: -1;
   }
   .who-grid, .benefits-grid, .foundations-grid, .expert-grid, .steps-timeline {
     grid-template-columns: 1fr;
