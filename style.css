@@ -4,12 +4,12 @@
    Reference Bar: Apple Education & Stripe Press
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 :root {
-  /* Typography */
+  /* Typography - 100% Native Vietnamese Typography */
   --font-sans: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  --font-script: 'Caveat', cursive, var(--font-sans);
+  --font-script: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   
   /* Sensory-Friendly & Sunlit Warm Natural Palette */
   --color-bg: #FAF7F0;              /* Sunlit Warm Linen / Oatmeal */
@@ -665,14 +665,15 @@ section {
 }
 
 .hero-script-tag {
-  font-family: var(--font-script);
-  font-size: clamp(1.35rem, 2.3vw, 1.75rem);
-  font-weight: 700;
+  font-family: var(--font-sans);
+  font-style: italic;
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-weight: 600;
   color: #2C6E91;
   margin-top: 0;
-  margin-bottom: 1.35rem;
-  line-height: 1.35;
-  letter-spacing: 0.01em;
+  margin-bottom: 1.25rem;
+  line-height: 1.45;
+  letter-spacing: -0.01em;
 }
 
 /* [MÔ TẢ] 2-3 CÂU SÚC TÍCH */
@@ -1904,10 +1905,11 @@ section {
   display: flex;
   align-items: center;
   gap: 1.25rem;
-  background: rgba(14, 30, 46, 0.94);
-  border: 1px solid rgba(248, 213, 154, 0.4);
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(224, 93, 56, 0.35);
+  box-shadow: 0 14px 36px rgba(27, 73, 101, 0.18), 0 2px 8px rgba(0, 0, 0, 0.04);
   backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   padding: 0.65rem 1.25rem;
   border-radius: var(--radius-pill);
   transition: transform 0.4s var(--ease-spring), opacity 0.4s ease;
@@ -1924,21 +1926,22 @@ section {
 .floating-cta-info {
   display: flex;
   flex-direction: column;
-  color: #fff;
 }
 
 .floating-cta-info strong {
   font-size: 0.92rem;
-  color: #FFFFFF;
+  color: var(--color-primary);
+  font-weight: 700;
 }
 
 .floating-cta-info span {
   font-size: 0.78rem;
-  color: #F8D59A;
+  color: var(--color-accent);
+  font-weight: 600;
 }
 
 .floating-cta-btn {
-  background: linear-gradient(135deg, var(--color-accent) 0%, #D04D28 100%);
+  background: linear-gradient(135deg, var(--color-accent) 0%, #C84926 100%);
   color: #fff;
   font-size: 0.88rem;
   font-weight: 700;
@@ -1959,10 +1962,9 @@ section {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(8, 18, 30, 0.92);
-  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 100%;
+  background: rgba(11, 30, 46, 0.92);
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -1970,7 +1972,7 @@ section {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
-  padding: 1.5rem;
+  backdrop-filter: blur(8px);
 }
 
 .lightbox-modal.active {
@@ -2011,10 +2013,10 @@ section {
   background: rgba(255, 255, 255, 0.2);
   border: none;
   color: #fff;
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -2030,7 +2032,7 @@ section {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(14, 30, 46, 0.8);
+  background: rgba(14, 30, 46, 0.85);
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: #fff;
   width: 46px;
@@ -2053,7 +2055,7 @@ section {
 .lightbox-next { right: -60px; }
 
 /* ==========================================================================
-   RESPONSIVE MEDIA QUERIES
+   RESPONSIVE MEDIA QUERIES (OPTIMIZED FOR MOBILE & TABLET)
    ========================================================================== */
 @media (max-width: 1024px) {
   .hero-dark-grid {
@@ -2103,54 +2105,165 @@ section {
 }
 
 @media (max-width: 768px) {
+  section {
+    padding-block: clamp(2.5rem, 6vw, 3.75rem);
+  }
   .hero-lead-magnet {
-    padding-top: 3.5rem;
-    padding-bottom: 4.5rem;
+    padding-top: 2.75rem;
+    padding-bottom: 3.75rem;
   }
   .book-3d-luxury img {
-    max-width: 270px;
+    max-width: 230px;
     margin-inline: auto;
   }
+  .hero-values-pill {
+    font-size: 0.74rem;
+    padding: 0.35rem 0.85rem;
+    margin-inline: auto;
+    margin-bottom: 0.85rem;
+  }
   .hero-dark-title {
-    font-size: clamp(1.85rem, 6.5vw, 2.5rem);
-    line-height: 1.18;
+    font-size: clamp(1.65rem, 6.2vw, 2.2rem);
+    line-height: 1.22;
+    text-align: center;
+    margin-bottom: 0.65rem;
+  }
+  .hero-script-tag {
+    font-size: 1.05rem;
+    line-height: 1.45;
+    text-align: center;
+    margin-bottom: 1rem;
   }
   .hero-dark-desc {
-    font-size: 1rem;
-    line-height: 1.65;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 1.5rem;
   }
   .btn-hero-cta {
     width: 100%;
+    min-height: 52px;
     font-size: 1.05rem;
-    padding: 1.05rem 1.5rem;
+    padding: 1rem 1.25rem;
     justify-content: center;
+  }
+  .hero-dark-subnote {
+    font-size: 0.82rem;
+    justify-content: center;
+    text-align: center;
+  }
+  .section-title {
+    font-size: clamp(1.5rem, 5.5vw, 1.95rem);
+    margin-bottom: 0.75rem;
+  }
+  .section-lead {
+    font-size: 0.96rem;
+    margin-bottom: 1.75rem;
   }
   .empathy-split-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
   .infographic-wrapper {
     position: static;
   }
+  .letter-card {
+    padding: 1.35rem 1.15rem;
+  }
+  .quote-highlight {
+    font-size: 0.96rem;
+    padding: 0.85rem 1rem;
+  }
+  .need-pills {
+    gap: 0.65rem;
+  }
+  .need-pill {
+    padding: 0.75rem 0.95rem;
+    gap: 0.75rem;
+  }
+  .need-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+  }
+  .need-text h4 {
+    font-size: 0.95rem;
+  }
+  .need-text p {
+    font-size: 0.88rem;
+  }
+  .usp-grid, .activities-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .usp-card {
+    padding: 1.25rem 1.15rem;
+  }
+  .who-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .who-card {
+    padding: 1.35rem 1.15rem;
+  }
+  .activity-card {
+    padding: 1.25rem 1.15rem;
+  }
   .expert-spotlight-card {
     grid-template-columns: 1fr;
+    padding: 1.35rem 1.15rem;
+    gap: 1.5rem;
     text-align: left;
   }
   .expert-spotlight-media {
     order: -1;
   }
-  .who-grid, .benefits-grid, .foundations-grid, .expert-grid, .steps-timeline {
+  .steps-timeline {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
-  .usp-grid, .activities-grid {
-    grid-template-columns: 1fr;
+  .step-card {
+    padding: 1.25rem 1rem;
   }
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .zalo-action-box {
+    padding: 1.5rem 1.15rem;
+    gap: 1.5rem;
+  }
+  .btn-zalo {
+    width: 100%;
+    min-height: 52px;
+    justify-content: center;
+    font-size: 1.02rem;
+    padding: 1rem 1.15rem;
+  }
+  .faq-question {
+    padding: 1.15rem 1.15rem;
+    font-size: 1rem;
+  }
+  .faq-answer {
+    padding: 0 1.15rem 1.15rem;
+    font-size: 0.92rem;
+  }
+  .final-cta-wrap {
+    padding: 2.25rem 1.15rem;
   }
   .floating-cta-bar {
-    width: calc(100% - 2rem);
-    border-radius: var(--radius-lg);
+    width: calc(100% - 1.5rem);
+    left: 50%;
+    bottom: 10px;
+    padding: 0.5rem 0.85rem;
+    border-radius: var(--radius-pill);
     justify-content: space-between;
-    bottom: 12px;
+  }
+  .floating-cta-info strong {
+    font-size: 0.82rem;
+  }
+  .floating-cta-info span {
+    font-size: 0.72rem;
+  }
+  .floating-cta-btn {
+    font-size: 0.82rem;
+    padding: 0.5rem 0.95rem;
+    white-space: nowrap;
   }
 }
