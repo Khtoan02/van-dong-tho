@@ -1404,6 +1404,11 @@ section {
   gap: 2.5rem;
 }
 
+.expert-single-wrap {
+  max-width: 780px;
+  margin-inline: auto;
+}
+
 .expert-card {
   background: var(--color-surface);
   border-radius: var(--radius-lg);

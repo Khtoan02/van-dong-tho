@@ -45,14 +45,8 @@
           </div>
         </div>
 
-        <!-- Cột Phải (~55%): [RIBBON][TIÊU ĐỀ][MÔ TẢ][CTA] -->
+        <!-- Cột Phải (~55%): [TIÊU ĐỀ][MÔ TẢ][CTA] -->
         <div class="hero-dark-copy">
-          <!-- [RIBBON] -->
-          <div class="hero-ribbon-badge">
-            <span class="ribbon-icon">👑</span>
-            <span>#1 BÁN CHẠY · CẨM NANG ĐỒNG HÀNH CHO BÉ</span>
-          </div>
-
           <!-- [TIÊU ĐỀ] H1 RẤT LỚN ~64px WEIGHT 900 IN HOA PHÂN DÒNG CÂN ĐỐI -->
           <h1 id="hero-heading" class="hero-dark-title">
             CẨM NANG PHÁT TRIỂN<br>
@@ -609,110 +603,16 @@
   </section>
 
   <!-- =========================================================================
-       DEDICATED 18-PAGE INTERACTIVE GALLERY & LIGHTBOX FLIPBOOK
-       ========================================================================= -->
-  <section class="gallery-section" id="gallery" aria-labelledby="gallery-heading">
-    <div class="wrap">
-      <div style="text-align: center; max-width: 760px; margin-inline: auto;">
-        <p class="section-eyebrow" style="justify-content: center;">Xem trước toàn bộ tài liệu</p>
-        <h2 id="gallery-heading" class="section-title">Khám Phá Trọn Vẹn 18 Trang Cẩm Nang</h2>
-        <p class="section-lead" style="margin-inline: auto;">Nhấp vào bất kỳ trang nào bên dưới để mở giao diện lật xem phóng to toàn màn hình sắc nét trước khi tải về.</p>
-      </div>
-
-      <div class="gallery-tabs">
-        <button class="gallery-tab-btn active" onclick="filterGallery('all', this)">Tất cả 18 trang</button>
-        <button class="gallery-tab-btn" onclick="filterGallery('part1', this)">Phần 1: Nền tảng (Trang 1–5)</button>
-        <button class="gallery-tab-btn" onclick="filterGallery('part2', this)">Phần 2: 10 Trò chơi (Trang 6–15)</button>
-        <button class="gallery-tab-btn" onclick="filterGallery('part3', this)">Phần 3: Nhật ký & Nguồn (Trang 16–18)</button>
-      </div>
-
-      <div class="gallery-grid" id="galleryGrid">
-        <!-- 18 Page Items Generated Dynamically / Pre-rendered -->
-        <div class="gallery-item" data-category="part1" onclick="openLightbox(0)">
-          <img src="assets/pages/page_1.webp" alt="Trang 1 - Bìa cẩm nang" loading="lazy">
-          <span class="gallery-page-label">Trang 01 · Bìa sách</span>
-        </div>
-        <div class="gallery-item" data-category="part1" onclick="openLightbox(1)">
-          <img src="assets/pages/page_2.webp" alt="Trang 2 - Lời nói đầu" loading="lazy">
-          <span class="gallery-page-label">Trang 02 · Lời ngỏ</span>
-        </div>
-        <div class="gallery-item" data-category="part1" onclick="openLightbox(2)">
-          <img src="assets/pages/page_3.webp" alt="Trang 3 - Khó khăn vận động thô" loading="lazy">
-          <span class="gallery-page-label">Trang 03 · Khó khăn</span>
-        </div>
-        <div class="gallery-item" data-category="part1" onclick="openLightbox(3)">
-          <img src="assets/pages/page_4.webp" alt="Trang 4 - Tầm quan trọng" loading="lazy">
-          <span class="gallery-page-label">Trang 04 · Lợi ích</span>
-        </div>
-        <div class="gallery-item" data-category="part1" onclick="openLightbox(4)">
-          <img src="assets/pages/page_5.webp" alt="Trang 5 - 5 Nguyên tắc vàng" loading="lazy">
-          <span class="gallery-page-label">Trang 05 · Nguyên tắc</span>
-        </div>
-        <div class="gallery-item" data-category="part2" onclick="openLightbox(5)">
-          <img src="assets/pages/page_6.webp" alt="Trang 6 - Trò chơi 1" loading="lazy">
-          <span class="gallery-page-label">Trang 06 · Trò chơi 01</span>
-        </div>
-        <div class="gallery-item" data-category="part2" onclick="openLightbox(6)">
-          <img src="assets/pages/page_7.webp" alt="Trang 7 - Trò chơi 2" loading="lazy">
-          <span class="gallery-page-label">Trang 07 · Trò chơi 02</span>
-        </div>
-        <div class="gallery-item" data-category="part2" onclick="openLightbox(7)">
-          <img src="assets/pages/page_8.webp" alt="Trang 8 - Trò chơi 3" loading="lazy">
-          <span class="gallery-page-label">Trang 08 · Trò chơi 03</span>
-        </div>
-        <div class="gallery-item" data-category="part2" onclick="openLightbox(8)">
-          <img src="assets/pages/page_9.webp" alt="Trang 9 - Trò chơi 4" loading="lazy">
-          <span class="gallery-page-label">Trang 09 · Trò chơi 04</span>
-        </div>
-        <div class="gallery-item" data-category="part2" onclick="openLightbox(9)">
-          <img src="assets/pages/page_10.webp" alt="Trang 10 - Trò chơi 5" loading="lazy">
-          <span class="gallery-page-label">Trang 10 · Trò chơi 05</span>
-        </div>
-        <div class="gallery-item" data-category="part2" onclick="openLightbox(10)">
-          <img src="assets/pages/page_11.webp" alt="Trang 11 - Trò chơi 6" loading="lazy">
-          <span class="gallery-page-label">Trang 11 · Trò chơi 06</span>
-        </div>
-        <div class="gallery-item" data-category="part2" onclick="openLightbox(11)">
-          <img src="assets/pages/page_12.webp" alt="Trang 12 - Trò chơi 7" loading="lazy">
-          <span class="gallery-page-label">Trang 12 · Trò chơi 07</span>
-        </div>
-        <div class="gallery-item" data-category="part2" onclick="openLightbox(12)">
-          <img src="assets/pages/page_13.webp" alt="Trang 13 - Trò chơi 8" loading="lazy">
-          <span class="gallery-page-label">Trang 13 · Trò chơi 08</span>
-        </div>
-        <div class="gallery-item" data-category="part2" onclick="openLightbox(13)">
-          <img src="assets/pages/page_14.webp" alt="Trang 14 - Trò chơi 9" loading="lazy">
-          <span class="gallery-page-label">Trang 14 · Trò chơi 09</span>
-        </div>
-        <div class="gallery-item" data-category="part2" onclick="openLightbox(14)">
-          <img src="assets/pages/page_15.webp" alt="Trang 15 - Trò chơi 10" loading="lazy">
-          <span class="gallery-page-label">Trang 15 · Trò chơi 10</span>
-        </div>
-        <div class="gallery-item" data-category="part3" onclick="openLightbox(15)">
-          <img src="assets/pages/page_16.webp" alt="Trang 16 - Nhật ký theo dõi" loading="lazy">
-          <span class="gallery-page-label">Trang 16 · Nhật ký OT</span>
-        </div>
-        <div class="gallery-item" data-category="part3" onclick="openLightbox(16)">
-          <img src="assets/pages/page_17.webp" alt="Trang 17 - Checklist quan sát" loading="lazy">
-          <span class="gallery-page-label">Trang 17 · Checklist</span>
-        </div>
-        <div class="gallery-item" data-category="part3" onclick="openLightbox(17)">
-          <img src="assets/pages/page_18.webp" alt="Trang 18 - Nguồn tham khảo" loading="lazy">
-          <span class="gallery-page-label">Trang 18 · Tài liệu nguồn</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================================================================
        SECTION 7: EXPERT & SCIENTIFIC FOUNDATION
        ========================================================================= -->
   <section class="expert-section" id="expert" aria-labelledby="expert-heading">
     <div class="wrap">
-      <p class="section-eyebrow">Uy tín & Khoa học</p>
-      <h2 id="expert-heading" class="section-title">Tài liệu này đến từ đâu?</h2>
+      <div style="text-align: center; max-width: 760px; margin-inline: auto;">
+        <p class="section-eyebrow" style="justify-content: center;">Uy tín & Khoa học</p>
+        <h2 id="expert-heading" class="section-title">Tài liệu này đến từ đâu?</h2>
+      </div>
 
-      <div class="expert-grid">
+      <div class="expert-single-wrap">
         <div class="expert-card">
           <span class="expert-tag">Tác giả nguyên tác Hoa Kỳ</span>
           <h3 class="expert-name">Heather Ajzenman, MS, OTR/L</h3>
@@ -724,31 +624,6 @@
           </div>
           <div class="expert-quote-box">
             "Vận động thô không chỉ là thể chất, đó là cây cầu giúp con kết nối cảm giác an toàn và tự tin làm chủ cơ thể mình."
-          </div>
-        </div>
-
-        <div class="expert-card">
-          <span class="expert-tag">Biên soạn & Điều chỉnh</span>
-          <h3 class="expert-name">Khánh Toàn & Nhóm Đồng Hành</h3>
-          <p class="expert-desc">
-            Chuyển ngữ, chọn lọc và tinh chỉnh phù hợp nhất với điều kiện gia đình Việt Nam: không gian nhà phố/chung cư, vật dụng dễ tìm và ngôn ngữ gần gũi.
-          </p>
-          <ul class="who-list" style="margin-bottom: 1.5rem;">
-            <li>
-              <span class="bullet-dot" style="background: var(--color-primary);"></span>
-              <span>Chọn lọc 10 trò chơi dễ thực hiện nhất với phụ huynh không chuyên.</span>
-            </li>
-            <li>
-              <span class="bullet-dot" style="background: var(--color-primary);"></span>
-              <span>Bổ sung hướng dẫn từng bước và các mức độ điều chỉnh độ khó.</span>
-            </li>
-            <li>
-              <span class="bullet-dot" style="background: var(--color-primary);"></span>
-              <span>Tích hợp mẫu Nhật ký theo dõi tiến triển hàng ngày cho bố mẹ.</span>
-            </li>
-          </ul>
-          <div class="expert-quote-box">
-            "Chúng mình tin rằng sự kiên nhẫn và thấu hiểu của cha mẹ tại nhà có sức mạnh không thua kém bất kỳ buổi can thiệp phòng khám nào."
           </div>
         </div>
       </div>
@@ -798,9 +673,6 @@
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
             </div>
           </a>
-          <p style="font-size: 0.85rem; color: #9FB2C8; margin-top: 1rem;">
-            Link trực tiếp: <strong style="word-break: break-all; color: #F8D59A;">https://zalo.me/g/urf9rsgbp4qki5gvxbya</strong>
-          </p>
         </div>
 
         <div class="qr-box-wrap">
@@ -816,56 +688,7 @@
   </section>
 
   <!-- =========================================================================
-       SECTION 9: CAM KẾT & BẢO MẬT
-       ========================================================================= -->
-  <section class="guarantee-section" aria-labelledby="guarantee-heading">
-    <div class="wrap">
-      <div class="guarantee-card">
-        <div>
-          <p class="section-eyebrow">Cam kết từ ban biên soạn</p>
-          <h2 id="guarantee-heading" class="section-title">Minh Bạch, An Toàn & Tôn Trọng</h2>
-          <div class="guarantee-points">
-            <div class="guarantee-point">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-              <div>
-                <h4>Tài liệu dịch thuật và hiệu đính chuẩn xác</h4>
-                <p>Nội dung được chuyển ngữ và chú giải cẩn trọng, không phải bản dịch máy thô sơ.</p>
-              </div>
-            </div>
-
-            <div class="guarantee-point">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line></svg>
-              <div>
-                <h4>Nói không với tin nhắn rác & quảng cáo chèo kéo</h4>
-                <p>Nhóm chỉ dùng để chia sẻ tài liệu và thảo luận hỗ trợ con, không bán hàng hay quảng cáo phiền toái.</p>
-              </div>
-            </div>
-
-            <div class="guarantee-point">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
-              <div>
-                <h4>Tôn trọng quyền riêng tư tuyệt đối</h4>
-                <p>Không yêu cầu đăng ký tài khoản, không yêu cầu thẻ ngân hàng, tự do lưu file về máy.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="guarantee-peace-box">
-          <h4>Lời nhắn nhủ đến bạn:</h4>
-          <p>
-            Nuôi dạy một đứa trẻ có sự khác biệt về giác quan là một hành trình dài đòi hỏi rất nhiều kiên nhẫn và yêu thương. Hãy cho bản thân và con quyền được đi từng bước nhỏ.
-          </p>
-          <p style="margin-top: 1rem;">
-            Bạn không đơn độc trên hành trình này. Hàng ngàn phụ huynh khác cũng đang cùng con bước từng bước vững vàng mỗi ngày.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================================================================
-       SECTION 10: FAQ (THẮC MẮC THƯỜNG GẶP)
+       SECTION 9: FAQ (THẮC MẮC THƯỜNG GẶP)
        ========================================================================= -->
   <section class="faq-section" id="faq" aria-labelledby="faq-heading">
     <div class="wrap">
@@ -899,7 +722,7 @@
   </section>
 
   <!-- =========================================================================
-       SECTION 11: FINAL CTA
+       SECTION 10: FINAL CTA
        ========================================================================= -->
   <section class="final-cta-section" aria-labelledby="final-cta-heading">
     <div class="wrap final-cta-wrap">
@@ -937,9 +760,9 @@
         <a href="#empathy">Thấu hiểu</a>
         <a href="#usp">Giá trị</a>
         <a href="#activities">10 Trò chơi</a>
-        <a href="#gallery">18 Trang</a>
         <a href="#expert">Chuyên môn</a>
         <a href="#zalo">Nhóm Zalo</a>
+        <a href="#faq">FAQ</a>
       </nav>
     </div>
     <p class="footer-disclaimer">
