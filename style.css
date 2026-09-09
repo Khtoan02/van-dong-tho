@@ -427,131 +427,49 @@ section {
 }
 
 /* ==========================================================================
-   SECTION 1: HERO LEAD MAGNET (Interactive 3D Luxury Showcase)
-   ========================================================================= */
+   SECTION 1: HERO LEAD MAGNET (BÁN SÁCH 2 CỘT 45/55 - NỀN TỐI & TƯƠNG PHẢN CAO)
+   ========================================================================== */
 .hero-lead-magnet {
   padding-top: 1.5rem;
-  padding-bottom: clamp(3rem, 6vw, 5rem);
+  padding-bottom: clamp(3.5rem, 6.5vw, 5.5rem);
+  background: radial-gradient(130% 130% at 50% 10%, #102133 0%, #08121E 50%, #040A10 100%);
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-dark-card {
-  background: radial-gradient(130% 130% at 75% 20%, #152A3C 0%, #0C1A27 45%, #071018 100%);
+  background: rgba(14, 28, 44, 0.7);
   border-radius: var(--radius-xl);
-  padding: clamp(2rem, 5vw, 4rem);
+  padding: clamp(2rem, 4.5vw, 3.75rem);
   box-shadow: var(--shadow-xl), 0 0 0 1px rgba(255, 255, 255, 0.08);
   position: relative;
-  overflow: hidden;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .hero-dark-card::before {
   content: "";
   position: absolute;
-  top: -20%;
-  right: -10%;
-  width: 600px;
-  height: 600px;
+  top: -25%;
+  left: 20%;
+  width: 550px;
+  height: 550px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(248, 213, 154, 0.12) 0%, rgba(224, 93, 56, 0.06) 50%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 107, 53, 0.12) 0%, rgba(248, 213, 154, 0.05) 50%, transparent 70%);
   pointer-events: none;
 }
 
+/* ① LAYOUT: Grid 2 cột ~45/55 */
 .hero-dark-grid {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: clamp(2rem, 4vw, 3.5rem);
+  grid-template-columns: 45fr 55fr;
+  gap: clamp(2rem, 4vw, 3.75rem);
   align-items: center;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
-.hero-dark-copy {
-  display: flex;
-  flex-direction: column;
-}
-
-.hero-dark-eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.85rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: #F8D59A;
-  background: rgba(248, 213, 154, 0.12);
-  border: 1px solid rgba(248, 213, 154, 0.25);
-  padding: 0.4rem 1rem;
-  border-radius: var(--radius-pill);
-  width: fit-content;
-  margin-bottom: 1.25rem;
-}
-
-.hero-dark-title {
-  font-size: clamp(2rem, 4.2vw, 3.35rem);
-  font-weight: 800;
-  line-height: 1.22;
-  color: #FFFFFF;
-  margin-bottom: 1.25rem;
-  letter-spacing: -0.03em;
-}
-
-.accent-gold {
-  background: linear-gradient(135deg, #FFEAB8 0%, #F8D59A 50%, #E8B964 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
-}
-
-.hero-dark-desc {
-  font-size: clamp(1.02rem, 1.8vw, 1.15rem);
-  line-height: 1.68;
-  color: #CBD8E6;
-  margin-bottom: 2rem;
-  text-wrap: pretty;
-}
-
-.hero-highlights-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.75rem 1.25rem;
-  margin-bottom: 2rem;
-}
-
-.hero-highlight-item {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  font-size: 0.94rem;
-  color: #E2ECF7;
-  font-weight: 500;
-}
-
-.hero-highlight-item svg {
-  color: #F8D59A;
-  flex-shrink: 0;
-}
-
-.hero-dark-cta-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.85rem;
-}
-
-.hero-dark-subnote {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  font-size: 0.88rem;
-  color: #9FB2C8;
-  line-height: 1.5;
-}
-
-.hero-dark-subnote svg {
-  color: #48BB78;
-  flex-shrink: 0;
-}
-
-/* 3D Book Mockup Stage */
+/* CỘT TRÁI (~45%): ẢNH BÌA SÁCH 3D */
 .hero-dark-media {
   display: flex;
   justify-content: center;
@@ -574,9 +492,9 @@ section {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  background: rgba(14, 30, 46, 0.95);
-  border: 1px solid rgba(248, 213, 154, 0.5);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  background: rgba(10, 22, 34, 0.95);
+  border: 1px solid rgba(255, 107, 53, 0.5);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.55);
   color: #F8D59A;
   font-size: 0.82rem;
   font-weight: 700;
@@ -589,10 +507,9 @@ section {
   position: relative;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: var(--shadow-book);
-  transform: rotateY(-12deg) rotateX(5deg);
+  box-shadow: 0 25px 60px -10px rgba(0, 0, 0, 0.65), 0 0 0 2px rgba(255, 107, 53, 0.35);
+  transform: rotateY(-10deg) rotateX(4deg);
   transition: transform 0.45s var(--ease-spring), box-shadow 0.45s ease;
-  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .book-3d-luxury::after {
@@ -602,29 +519,141 @@ section {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(105deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.03) 40%, transparent 60%);
+  background: linear-gradient(110deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.03) 40%, transparent 60%);
   pointer-events: none;
 }
 
 .book-3d-luxury:hover {
-  transform: rotateY(-4deg) rotateX(2deg) translateY(-8px) scale(1.02);
-  box-shadow: 0 35px 70px -15px rgba(0, 0, 0, 0.6);
+  transform: rotateY(-2deg) rotateX(2deg) translateY(-8px) scale(1.02);
+  box-shadow: 0 35px 75px -12px rgba(0, 0, 0, 0.75), 0 0 0 2px rgba(255, 107, 53, 0.6);
 }
 
 .book-3d-luxury img {
   display: block;
   width: 100%;
-  max-width: 330px;
+  max-width: 340px;
   height: auto;
 }
 
 .book-hover-hint {
   margin-top: 1rem;
   font-size: 0.82rem;
-  color: #9FB2C8;
+  color: #A3B5C9;
   display: flex;
   align-items: center;
   gap: 0.4rem;
+}
+
+/* CỘT PHẢI (~55%): [RIBBON][TIÊU ĐỀ][MÔ TẢ][CTA] */
+.hero-dark-copy {
+  display: flex;
+  flex-direction: column;
+}
+
+/* [RIBBON] */
+.hero-ribbon-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #FFA273;
+  background: linear-gradient(135deg, rgba(255, 107, 53, 0.2) 0%, rgba(248, 213, 154, 0.12) 100%);
+  border: 1px solid rgba(255, 107, 53, 0.45);
+  padding: 0.45rem 1.1rem;
+  border-radius: var(--radius-pill);
+  width: fit-content;
+  margin-bottom: 1.35rem;
+  box-shadow: 0 4px 14px rgba(255, 107, 53, 0.15);
+}
+
+.hero-ribbon-badge .ribbon-icon {
+  font-size: 1rem;
+}
+
+/* ③ TYPOGRAPHY: H1 RẤT LỚN ~64px WEIGHT 900 IN HOA */
+.hero-dark-title {
+  font-size: clamp(2.3rem, 5vw, 3.95rem); /* ~64px trên desktop */
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.14;
+  color: #FFFFFF;
+  margin-bottom: 1.35rem;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+/* ② CỤM NHẤN H1 DÙNG MÀU NHẤN NỔI */
+.hero-accent-word {
+  color: #FF6B35;
+  background: linear-gradient(135deg, #FFA273 0%, #FF6B35 50%, #FF4500 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  filter: drop-shadow(0 4px 12px rgba(255, 107, 53, 0.35));
+}
+
+/* [MÔ TẢ] 2-3 CÂU SÚC TÍCH */
+.hero-dark-desc {
+  font-size: clamp(1.05rem, 1.8vw, 1.18rem);
+  line-height: 1.72;
+  color: #CBD8E6;
+  margin-bottom: 2.25rem;
+  text-wrap: pretty;
+}
+
+/* [CTA] NÚT KÊU GỌI HÀNH ĐỘNG */
+.hero-dark-cta-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.btn-hero-cta {
+  background: linear-gradient(135deg, #FF6B35 0%, #E64A19 100%);
+  color: #FFFFFF;
+  padding: 1.15rem 2.35rem;
+  font-size: 1.15rem;
+  font-weight: 800;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 14px 34px -4px rgba(255, 107, 53, 0.55), inset 0 1px 1px rgba(255, 255, 255, 0.35);
+  width: fit-content;
+}
+
+.btn-hero-cta:hover {
+  background: linear-gradient(135deg, #FF7D4D 0%, #F05524 100%);
+  box-shadow: 0 18px 40px -4px rgba(255, 107, 53, 0.65), inset 0 1px 1px rgba(255, 255, 255, 0.45);
+  color: #FFFFFF;
+}
+
+.hero-dark-subnote {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.88rem;
+  color: #9FB2C8;
+  line-height: 1.5;
+}
+
+.hero-dark-subnote svg {
+  color: #48BB78;
+  flex-shrink: 0;
+}
+
+/* ② CẠNH DƯỚI TRANG TRÍ RĂNG CƯA */
+.hero-sawtooth-divider {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 20' preserveAspectRatio='none'%3E%3Cpolygon points='0,20 20,0 40,20' fill='%23FBF9F5'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-size: 36px 20px;
+  z-index: 20;
+  pointer-events: none;
 }
 
 /* ==========================================================================
@@ -1867,13 +1896,20 @@ section {
     text-align: center;
     gap: 2.5rem;
   }
-  .hero-dark-eyebrow {
+  .hero-dark-media {
+    order: 1;
+    margin-bottom: 0.5rem;
+  }
+  .hero-dark-copy {
+    order: 2;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-ribbon-badge {
     margin-inline: auto;
   }
-  .hero-highlights-list {
-    max-width: 500px;
+  .btn-hero-cta {
     margin-inline: auto;
-    text-align: left;
   }
   .hero-dark-subnote {
     justify-content: center;
