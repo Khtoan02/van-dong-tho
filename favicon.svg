@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3D746F"/>
+      <stop offset="100%" stop-color="#2D5A56"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Squircle -->
+  <rect width="512" height="512" rx="120" fill="url(#bgGrad)"/>
+  <!-- Subtle Warm Border -->
+  <rect x="12" y="12" width="488" height="488" rx="114" fill="none" stroke="#F2B66D" stroke-width="6" stroke-opacity="0.35"/>
+
+  <!-- Sparkle Star -->
+  <path d="M112.5 77.5 L118.5 106.5 L147.5 112.5 L118.5 118.5 L112.5 147.5 L106.5 118.5 L77.5 112.5 L106.5 106.5 Z" fill="#F2B66D"/>
+
+  <!-- Sole of baby foot -->
+  <path d="M195 215 C210 180 262.5 175 310 192.5 C337.5 205 350 235 347.5 270 C345 315 325 355 305 382.5 C290 407.5 270 420 245 415 C225 410 212.5 387.5 215 362.5 C220 335 230 310 225 285 C220 262.5 185 242.5 195 215 Z" fill="#FFFDF8"/>
+
+  <!-- 5 Chubby Toes -->
+  <!-- Toe 1: Golden Amber Big Toe -->
+  <ellipse cx="192.5" cy="142.5" rx="31.25" ry="37.5" transform="rotate(-10 192.5 142.5)" fill="#F2B66D"/>
+  <!-- Toe 2: Terracotta Coral Accent -->
+  <ellipse cx="252.5" cy="135" rx="23.75" ry="28.75" transform="rotate(5 252.5 135)" fill="#E98755"/>
+  <!-- Toe 3: Golden Amber -->
+  <ellipse cx="302.5" cy="145" rx="20.5" ry="24.5" transform="rotate(18 302.5 145)" fill="#F2B66D"/>
+  <!-- Toe 4: Terracotta Coral Accent -->
+  <ellipse cx="343.75" cy="166.25" rx="17.5" ry="20.5" transform="rotate(30 343.75 166.25)" fill="#E98755"/>
+  <!-- Toe 5: Golden Amber Pinky Toe -->
+  <ellipse cx="375" cy="193.75" rx="14.5" ry="17" transform="rotate(42 375 193.75)" fill="#F2B66D"/>
+</svg>
